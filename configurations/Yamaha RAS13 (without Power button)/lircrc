@@ -1,75 +1,72 @@
-## irexec
-begin irexec
-	begin
-		prog = irexec
-		button = CD_PLAY
-		config = /usr/local/bin/volumio toggle
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = CD_PAUSE
-		config = /usr/local/bin/volumio toggle
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = CD_STOP
-		config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/toggle-stop-after-current.js
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = CD_NEXT
-		config = /usr/local/bin/volumio next
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = CD_PREV
-		config = /usr/local/bin/volumio previous
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = CD_FF
-		config = /usr/local/bin/volumio seek plus
-		repeat = 10
-	end
-	begin
-		prog = irexec
-		button = CD_REW
-		config = /usr/local/bin/volumio seek minus
-		repeat = 10
-	end
-	begin
-		prog = irexec
-		button = CD_DISK_SKIP
-		config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; /usr/local/bin/volumio toggleRandomRepeat
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = BAND
-		config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = MEMORY
-		config = node /home/volumio/NP-01_buttons/commands/play-playlist.js "$(cat /home/volumio/NP-01_buttons/commands/selected-playlist.txt)"
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = PRESET_LEFT
-		config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/select-playlist.js prev
-		repeat = 0
-	end
-	begin
-		prog = irexec
-		button = PRESET_RIGHT
-		config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/select-playlist.js next
-		repeat = 0
-	end
-end irexec
+begin
+	prog = irexec
+	button = CD_PLAY
+	config = /usr/local/bin/volumio toggle
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = CD_PAUSE
+	config = /usr/local/bin/volumio toggle
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = CD_STOP
+	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/toggle-stop-after-current.js
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = CD_NEXT
+	config = /usr/local/bin/volumio next
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = CD_PREV
+	config = /usr/local/bin/volumio previous
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = CD_FF
+	config = /usr/local/bin/volumio seek plus
+	repeat = 10
+end
+begin
+	prog = irexec
+	button = CD_REW
+	config = /usr/local/bin/volumio seek minus
+	repeat = 10
+end
+begin
+	prog = irexec
+	button = CD_DISK_SKIP
+	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; /usr/local/bin/volumio toggleRandomRepeat
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = BAND
+	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = MEMORY
+	config = node /home/volumio/NP-01_buttons/commands/play-playlist.js "$(cat /home/volumio/NP-01_buttons/commands/selected-playlist.txt)"
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = PRESET_LEFT
+	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/select-playlist.js prev
+	repeat = 0
+end
+begin
+	prog = irexec
+	button = PRESET_RIGHT
+	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/select-playlist.js next
+	repeat = 0
+end
