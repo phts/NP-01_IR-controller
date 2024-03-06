@@ -13,7 +13,7 @@ end
 begin
 	prog = irexec
 	button = CD_STOP
-	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/commands/toggle-stop-after-current.js
+	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh || true; node /home/volumio/NP-01_buttons/app/commands/toggle-stop-after-current.js
 	repeat = 0
 end
 begin
