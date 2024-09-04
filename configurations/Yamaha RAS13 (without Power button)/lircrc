@@ -49,7 +49,7 @@ end
 begin
 	prog = irexec
 	button = BAND
-	config = bash /home/volumio/NP-01_buttons/commands/exit_vu_meter.sh
+	config = bash /home/volumio/NP-01_buttons/commands/toggle_vu_meter.sh
 	repeat = 0
 end
 begin
